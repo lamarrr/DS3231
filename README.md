@@ -11,17 +11,19 @@ Still in active development as there are still many routines yet to be implement
 
 
 <h2> Contributing </h2>
-We adhere strictly to the Google C++ Style Guidelines
-Datasheet can be found <a href="https://datasheets.maximintegrated.com/en/ds/DS3231.pdf">HERE</a>
+A few notes:
+<li>We adhere strictly to the Google C++ Style Guidelines. </li><li> Datasheet can be found <a href="https://datasheets.maximintegrated.com/en/ds/DS3231.pdf">HERE</a> (Really Helpful).</li>
 
 
 <h2>Example</h2>
-<p>It is advisable to use 400kHz frequency for the I2C.
-Also, be sure to set the configuration of the I2C (rise and fall time especially) as described in the datasheet to get consistent results.
+<p>It is advisable to use 400kHz frequency for the I2C.<br/>
+Also, be sure to set the configuration of the I2C (rise and fall time especially) as described in the datasheet to get consistent results.<br/>
 Just provide the Rx and Tx routines and you're good to go!
 A really easy interface as demonstrated below:
 </p>
 
+
+```cpp
 	extern "C" {
 	#include "main.h"
 
@@ -93,6 +95,8 @@ A really easy interface as demonstrated below:
 		}
 		return 0;
 	}
+```
+
 
 <p> You should get something like this: </p>
 <img src="assets/demo.png"/>
